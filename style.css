@@ -1,1 +1,16 @@
-body{font-family:Arial;}
+*{box-sizing:border-box}
+body{font-family:Arial,Helvetica,sans-serif;background:#f5f7fb;margin:0;padding:20px}
+.container{max-width:800px;margin:20px auto;background:#fff;padding:24px;border-radius:10px;box-shadow:0 6px 20px rgba(0,0,0,0.06)}
+header h1{margin:0;font-size:28px}
+.subtitle{color:#555;margin-top:6px}
+.cover{width:100%;height:auto;border-radius:8px;margin:18px 0}
+.about p{line-height:1.6;color:#333}
+.price{margin-top:10px;font-weight:700}
+.actions{margin:18px 0}
+.btn{display:inline-block;padding:10px 18px;border-radius:8px;color:#fff;text-decoration:none;margin-right:10px}
+.btn.view{background:#4b6cb7}
+.btn.buy{background:#28a745}
+.order input,.order select,.order button{width:100%;padding:10px;margin-top:8px;border-radius:6px;border:1px solid #ccc}
+.order button{background:#ff6600;color:#fff;border:none;margin-top:12px}
+.contacts{margin-top:18px;color:#333}
+.contacts a{color:#1a3aa6}
