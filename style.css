@@ -1,59 +1,105 @@
-body{
+body {
   font-family: Arial;
-  background:#f2f2f2;
-  margin:0;
-  padding:20px;
+  background: #f4f6f9;
+  margin: 0;
+  padding: 20px;
 }
 
-.container{
-  max-width:700px;
-  margin:auto;
-  background:white;
-  padding:20px;
-  border-radius:10px;
+.container {
+  max-width: 1000px;
+  margin: auto;
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
 }
 
-.cover{
-  width:100%;
-  border-radius:10px;
-  margin-bottom:15px;
+/* ГОЛОВНИЙ БЛОК */
+.book {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
 }
 
-.buttons{
-  display:flex;
-  flex-direction:column;
-  gap:10px;
-  margin-top:15px;
+/* ОБКЛАДИНКА */
+.book-image img {
+  width: 280px;
+  border-radius: 10px;
 }
 
-.btn{
-  padding:12px;
-  border-radius:6px;
-  text-decoration:none;
-  color:white;
-  text-align:center;
+/* ІНФО */
+.book-info {
+  flex: 1;
 }
 
-.view{background:#007bff;}
-.boosty{background:#ff7a00;}
-.donate{background:#ff4d4d;}
-.tg{background:#229ED9;}
-
-form input, form button{
-  width:100%;
-  padding:10px;
-  margin-top:10px;
-  border-radius:5px;
-  border:1px solid #ccc;
+.book-info h1 {
+  margin-top: 0;
 }
 
-form button{
-  background:#28a745;
-  color:white;
-  border:none;
+.author {
+  color: #666;
+  margin-bottom: 10px;
 }
 
-.note{
-  margin-top:10px;
-  color:#555;
+.desc {
+  line-height: 1.6;
+}
+
+.price {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 15px 0;
+}
+
+/* КНОПКИ */
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.btn {
+  padding: 12px;
+  border-radius: 6px;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+}
+
+.view { background: #007bff; }
+.boosty { background: #ff7a00; }
+.donate { background: #ff4d4d; }
+.tg { background: #229ED9; }
+
+/* ФОРМА */
+form input, form button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+form button {
+  background: #28a745;
+  color: white;
+  border: none;
+}
+
+.note {
+  margin-top: 10px;
+  color: #555;
+}
+
+/* 📱 АДАПТИВ */
+@media (max-width: 768px) {
+  .book {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .book-image img {
+    width: 100%;
+    max-width: 300px;
+  }
 }
